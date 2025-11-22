@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clicka S.A.S. – Haz clic en tu éxito digital</title>
+  <meta name="description" content="Diseño web, tiendas online, marketing digital, SEO y branding para pequeños negocios." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#E452A3; /* Rosado marca */
+      --dark:#1A1A1A;
+      --gray:#6B7280;
+      --light:#F7F7F9;
+      --white:#FFFFFF;
+      --accent:#6E56CF; /* detalle secundario */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Open Sans',system-ui,-apple-system,sans-serif;color:var(--dark);background:var(--light)}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:50;background:var(--white);
+      border-bottom:1px solid #eee;
+    }
+    .nav{
+      max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;
+    }
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo-badge{width:34px;height:34px;border-radius:8px;background:var(--primary);display:grid;place-items:center;color:#fff;font-family:Montserrat}
+    .menu{display:flex;gap:18px}
+    .menu a{font-weight:600;color:var(--gray)}
+    .cta-btn{
+      background:var(--primary);color:#fff;padding:10px 16px;border-radius:8px;font-weight:700;font-family:Montserrat
+    }
+    /* Hero */
+    .hero{
+      max-width:1100px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:24px;
+    }
+    .hero h1{font-family:Montserrat;font-size:36px;line-height:1.15;margin:0 0 12px}
+    .hero p{color:var(--gray);margin:0 0 20px}
+    .hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      padding:12px 18px;border-radius:10px;font-weight:700;font-family:Montserrat;border:2px solid transparent
+    }
+    .btn.primary{background:var(--primary);color:#fff}
+    .btn.secondary{background:#fff;color:var(--dark);border-color:#eee}
+    .hero-card{
+      background:#fff;border:1px solid #eee;border-radius:16px;padding:18px;
+      display:grid;gap:12px;box-shadow:0 6px 20px rgba(0,0,0,.06)
+    }
+    .pill{display:inline-block;background:var(--light);color:var(--gray);border:1px solid #eee;padding:8px 12px;border-radius:999px;font-size:14px}
+    /* Section generic */
+    section{max-width:1100px;margin:0 auto;padding:50px 20px}
+    section h2{font-family:Montserrat;font-size:28px;margin:0 0 8px}
+    section .lead{color:var(--gray);margin:0 0 24px}
+    /* Services */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:#fff;border:1px solid #eee;border-radius:14px;padding:18px;display:grid;gap:8px
+    }
+    .card h3{font-family:Montserrat;margin:0}
+    .card p{color:var(--gray);margin:0}
+    .tag{display:inline-block;background:#F3E8FF;color:#4C1D95;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    /* Portfolio */
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .work{
+      background:#fff;border:1px solid #eee;border-radius:14px;overflow:hidden
+    }
+    .work .meta{padding:14px}
+    .meta h4{margin:0;font-family:Montserrat}
+    .meta span{color:var(--gray);font-size:14px}
+    /* Contact */
+    .contact{
+      display:grid;grid-template-columns:1fr 1fr;gap:24px
+    }
+    form{background:#fff;border:1px solid #eee;border-radius:14px;padding:18px;display:grid;gap:12px}
+    label{font-weight:600}
+    input,textarea{
+      width:100%;padding:12px;border-radius:10px;border:1px solid #ddd;font-size:15px
+    }
+    textarea{min-height:120px}
+    .small{font-size:13px;color:var(--gray)}
+    /* Footer */
+    footer{
+      background:#111;color:#ddd;margin-top:40px
+    }
+    .footer-inner{max-width:1100px;margin:0 auto;padding:26px 20px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}
+    .footer-inner h5{margin:0 0 10px;font-family:Montserrat;color:#fff}
+    .copyright{border-top:1px solid #222;padding:12px 20px;text-align:center;color:#aaa}
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .contact{grid-template-columns:1fr}
+      .footer-inner{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){
+      .menu{display:none}
+      .grid-3,.grid-2{grid-template-columns:1fr}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="imagenes/logo-clicka.png" alt="Logo Clicka S.A.S." style="height:150px;">
+        <div class="logo-badge">C</div>
+        <div>Clicka S.A.S.</div>
+      </div>
+      <nav class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="cta-btn" href="#contacto">Solicita tu web</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+<section class="hero" style="
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('imagenes/portada.avif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+">
+  <div style="max-width: 1100px; margin: 0 auto;">
+  <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+    
+    <!-- Bloque 1: Texto principal -->
+    <div style="flex: 1 1 500px;">
+      <!-- Aquí va tu texto, botones y etiquetas -->
+    </div>
+
+    <!-- Bloque 2: Tarjeta del paquete -->
+    <div style="flex: 1 1 400px;">
+      <!-- Aquí va tu tarjeta del Paquete Emprendedor -->
+    </div>
+
+  </div>
+</div>
+      
+      <!-- Texto principal -->
+      <div style="flex: 1 1 500px; min-width: 300px;">
+        <span style="display: inline-block; background-color: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 999px; font-size: 14px;">Desde 2025 • Soacha, Cundinamarca</span>
+        <h1 style="font-size: 36px; font-family: 'Montserrat', sans-serif; margin-top: 20px;">Haz clic en tu éxito digital</h1>
+        <p style="font-size: 18px; line-height: 1.5; color: white;">Diseño web, tiendas online y posicionamiento para pequeños negocios. Soluciones accesibles, funcionales y personalizadas.</p>
+        
+        <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="#contacto" style="background-color: #E452A3; color: white; padding: 12px 20px; border-radius: 8px; font-weight: bold; text-decoration: none;">Cotizar ahora</a>
+          <a href="#portafolio" style="background-color: white; color: #1A1A1A; padding: 12px 20px; border-radius: 8px; font-weight: bold; text-decoration: none;">Ver portafolio</a>
+        </div>
+
+        <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <span style="background-color: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 999px;">Branding</span>
+          <span style="background-color: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 999px;">SEO</span>
+          <span style="background-color: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 999px;">Marketing digital</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta del paquete -->
+      <div style="flex: 1 1 400px; min-width: 280px; background-color: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); border-radius: 16px; padding: 20px;">
+        <div style="background-color: #F3E8FF; color: #4C1D95; padding: 6px 10px; border-radius: 999px; font-size: 14px; font-weight: bold; display: inline-block;">Paquete Emprendedor</div>
+        <strong style="display: block; margin-top: 10px;">Sitio web profesional + dominio + hosting + soporte</strong>
+        <ul style="margin-top: 10px; padding-left: 20px;">
+          <li>Diseño responsivo</li>
+          <li>Integración WhatsApp y redes</li>
+          <li>Optimización básica SEO</li>
+          <li>Capacitación de uso</li>
+        </ul>
+        <a href="#contacto" style="margin-top: 12px; display: inline-block; background-color: #E452A3; color: white; padding: 10px 18px; border-radius: 8px; font-weight: bold; text-decoration: none;">Quiero este paquete</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <p class="lead">Soluciones digitales pensadas para microempresarios y emprendedores.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Diseño web</h3>
+        <p>Arquitectura, diseño visual y desarrollo de sitios rápidos, seguros y fáciles de usar.</p>
+      </div>
+      <div class="card">
+        <h3>Tiendas online (E-commerce)</h3>
+        <p>Catálogo, carrito, pagos, envíos y panel autogestionable para vender 24/7.</p>
+      </div>
+      <div class="card">
+        <h3>SEO y marketing digital</h3>
+        <p>Posicionamiento en buscadores, anuncios y contenidos que atraen clientes.</p>
+      </div>
+      <div class="card">
+        <h3>Branding</h3>
+        <p>Identidad de marca: logo, paleta, tipografía y tono para comunicar con coherencia.</p>
+      </div>
+      <div class="card">
+        <h3>Soporte y capacitación</h3>
+        <p>Acompañamiento técnico, mantenimiento y formación para que domines tu sitio.</p>
+      </div>
+      <div class="card">
+        <h3>Paquetes a medida</h3>
+        <p>Planes flexibles según tu sector, objetivos y presupuesto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio">
+    <h2>Portafolio</h2>
+    <p class="lead">Proyectos y maquetas que muestran nuestro estilo y enfoque.</p>
+    <div class="grid-2">
+      <div class="work">
+        <img src="https://picsum.photos/800/450?random=1" alt="Proyecto 1">
+        <div class="meta">
+          <h4>Panadería Local</h4>
+          <span>Sitio vitrina + pedidos por WhatsApp</span>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://picsum.photos/800/450?random=2" alt="Proyecto 2">
+        <div class="meta">
+          <h4>Tienda de Ropa</h4>
+          <span>E-commerce con pagos y envíos integrados</span>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://picsum.photos/800/450?random=3" alt="Proyecto 3">
+        <div class="meta">
+          <h4>Profesional Independiente</h4>
+          <span>Portfolio + agendamiento de citas</span>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://picsum.photos/800/450?random=4" alt="Proyecto 4">
+        <div class="meta">
+          <h4>Clicka S.A.S.</h4>
+          <span>Sitio corporativo y blog</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p class="lead">Impulsamos la transformación digital de pequeños negocios con cercanía, creatividad y tecnología.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Misión</h3>
+        <p>Diseñar soluciones digitales accesibles, funcionales y personalizadas que fortalezcan la presencia online.</p>
+      </div>
+      <div class="card">
+        <h3>Visión</h3>
+        <p>Ser referente en soluciones digitales para microempresas en Colombia, con enfoque humano e innovador.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p class="lead">Cuéntanos tu idea y te enviamos una propuesta.</p>
+    <div class="contact">
+      <form id="contactForm">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <label>Correo</label>
+        <input type="email" name="correo" placeholder="tu@correo.com" required />
+        <label>Mensaje</label>
+        <textarea name="mensaje" placeholder="¿Qué necesitas? Diseñar sitio, tienda, SEO..." required></textarea>
+        <button class="btn primary" type="submit">Enviar</button>
+        <span class="small">Al enviar, nos pondremos en contacto en menos de 24 horas.</span>
+      </form>
+      <div class="card">
+        <h3>Datos de contacto</h3>
+        <p><strong>Teléfono:</strong> 302 528 9240</p>
+        <p><strong>Correo:</strong> servicios@clicka.co</p>
+        <p><strong>Web:</strong> www.clickaweb.com</p>
+        <p><strong>Redes:</strong> @clicka</p>
+        <p class="small">Soacha, Cundinamarca – Atención a toda Colombia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h5>Clicka S.A.S.</h5>
+        <p>Haz clic en tu éxito digital. Construimos sitios y tiendas que venden.</p>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <p>Diseño web</p>
+        <p>Tiendas online</p>
+        <p>SEO y marketing</p>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <p>© 2025 Clicka S.A.S.</p>
+        <p>NIT: 900.123.456-7</p>
+      </div>
+    </div>
+    <div class="copyright">
+      Hecho con pasión en Colombia
+    </div>
+  </footer>
+
+  <script>
+    // Envío simulado del formulario
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('¡Gracias! Tu mensaje fue enviado. Te contactaremos pronto.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
